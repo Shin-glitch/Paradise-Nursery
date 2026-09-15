@@ -36,17 +36,14 @@ Clone the repository and install the dependencies:
 
 ```bash
 npm install
-```
 
 Start the development server:
 
-```Bash
 npm run dev
-```
+
 Then open the local URL shown in the terminal.
 
 Project Structure
-
 src/
 ├── components/
 │   ├── Navbar.jsx
@@ -64,6 +61,6 @@ src/
 ├── App.css
 ├── index.css
 └── main.jsx
+Author
 
-Author  
 Shin

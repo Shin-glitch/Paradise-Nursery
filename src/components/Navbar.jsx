@@ -16,6 +16,7 @@ function Navbar() {
       <div>
         <Link to="/">Home</Link>
         <Link to="/products">Plants</Link>
+        <Link to="/about">About Us</Link>
         <Link to="/cart">
           🛒 Cart ({totalItems})
         </Link>

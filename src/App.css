@@ -210,3 +210,29 @@ button:disabled {
   margin-top: 30px;
   justify-content: center;
 }
+
+/* About */
+
+.about-page {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 40px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.about-page h1 {
+  color: #1b4332;
+  margin-bottom: 25px;
+}
+
+.about-page h2 {
+  color: #2d6a4f;
+  margin-top: 30px;
+}
+
+.about-page p {
+  font-size: 17px;
+  line-height: 1.7;
+}

@@ -5,7 +5,7 @@ import {
 } from "../redux/CartSlice";
 import { Link } from "react-router-dom";
 
-function Cart() {
+function CartItem() {
   const dispatch = useDispatch();
   const cartItems = useSelector((state) => state.cart.items);
 
@@ -109,4 +109,4 @@ function Cart() {
   );
 }
 
-export default Cart;
+export default CartItem;

@@ -2,7 +2,7 @@ import { useSelector } from "react-redux";
 import PlantCard from "../components/PlantCard";
 import plants from "../data/plants";
 
-function Products() {
+function ProductList() {
   const cartItems = useSelector((state) => state.cart.items);
 
   const isInCart = (plantId) => {
@@ -35,4 +35,5 @@ function Products() {
     </div>
   );
 }
+
 export default ProductList;

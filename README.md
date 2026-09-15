@@ -34,22 +34,5 @@ A React-based plant shopping website built using React, Redux Toolkit, and React
 
 Clone the repository and install the dependencies:
 
-Start the development server:
-
-npm run dev
-
-Then open the local URL shown in the terminal.
-
-Project Structure
-
-src/
-├── components/
-├── data/
-├── pages/
-├── redux/
-├── App.jsx
-├── App.css
-└── main.jsx
-
 ```bash
 npm install

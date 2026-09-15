@@ -1,9 +1,8 @@
 import { useDispatch, useSelector } from "react-redux";
 import {
-  removeFromCart,
-  increaseQuantity,
-  decreaseQuantity,
-} from "../redux/cartSlice";
+  removeItem,
+  updateQuantity,
+} from "../redux/CartSlice";
 import { Link } from "react-router-dom";
 
 function Cart() {
@@ -22,7 +21,7 @@ function Cart() {
 
   if (cartItems.length === 0) {
     return (
-      <div>
+      <div className="cart-page">
         <h1>Your Cart</h1>
         <h2>Your cart is empty.</h2>
 
@@ -55,7 +54,12 @@ function Cart() {
             <div>
               <button
                 onClick={() =>
-                  dispatch(decreaseQuantity(item.id))
+                  dispatch(
+                    updateQuantity({
+                      id: item.id,
+                      quantity: item.quantity - 1,
+                    })
+                  )
                 }
               >
                 -
@@ -65,7 +69,12 @@ function Cart() {
 
               <button
                 onClick={() =>
-                  dispatch(increaseQuantity(item.id))
+                  dispatch(
+                    updateQuantity({
+                      id: item.id,
+                      quantity: item.quantity + 1,
+                    })
+                  )
                 }
               >
                 +
@@ -78,7 +87,7 @@ function Cart() {
 
             <button
               onClick={() =>
-                dispatch(removeFromCart(item.id))
+                dispatch(removeItem(item.id))
               }
             >
               Delete
@@ -92,9 +101,7 @@ function Cart() {
           <button>Continue Shopping</button>
         </Link>
 
-        <button
-          onClick={() => alert("Coming Soon")}
-        >
+        <button onClick={() => alert("Coming Soon")}>
           Checkout
         </button>
       </div>

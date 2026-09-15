@@ -1,16 +1,11 @@
 import { useDispatch } from "react-redux";
-import { addToCart } from "../redux/cartSlice";
+import { addItem } from "../redux/CartSlice";
 
 function PlantCard({ plant, isInCart }) {
   const dispatch = useDispatch();
 
   const handleAddToCart = () => {
-    dispatch(
-      addToCart({
-        ...plant,
-        quantity: 1,
-      })
-    );
+    dispatch(addItem(plant));
   };
 
   return (

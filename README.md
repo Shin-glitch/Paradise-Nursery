@@ -36,3 +36,34 @@ Clone the repository and install the dependencies:
 
 ```bash
 npm install
+```
+
+Start the development server:
+
+```Bash
+npm run dev
+```
+Then open the local URL shown in the terminal.
+
+Project Structure
+
+src/
+├── components/
+│   ├── Navbar.jsx
+│   └── PlantCard.jsx
+├── data/
+│   └── plants.js
+├── pages/
+│   ├── Home.jsx
+│   ├── Products.jsx
+│   └── Cart.jsx
+├── redux/
+│   ├── cartSlice.js
+│   └── store.js
+├── App.jsx
+├── App.css
+├── index.css
+└── main.jsx
+
+Author  
+Shin
